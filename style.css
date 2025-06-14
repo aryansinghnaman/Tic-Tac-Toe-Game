@@ -1,47 +1,83 @@
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #121212;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
 }
 
+
 h1 {
-  margin-top: 20px;
+  margin: 20px 0 10px;
+  font-size: 2.5em;
+  color: #00ffc8;
 }
+
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.2em;
+  margin: 10px 0 20px;
+}
+
+.scoreboard span {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #ffb400;
+  border: 1px solid #444;
+}
+
 
 .game-board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
-  gap: 5px;
+  gap: 8px;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 }
+
 
 .cell {
   width: 100px;
   height: 100px;
-  background-color: white;
-  border: 2px solid #333;
-  font-size: 2em;
+  background-color: #222;
+  border: 2px solid #444;
+  font-size: 2.5em;
+  color: #00ffae;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #333;
 }
 
 .status {
-  font-size: 1.2em;
-  margin: 15px;
+  font-size: 1.4em;
+  margin: 20px 0;
+  color: #f1f1f1;
 }
+
 
 button {
   padding: 10px 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ffc8;
+  color: #000;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-.scoreboard {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 1.1em;
-  margin-bottom: 10px;
+
+button:hover {
+  background-color: #00c9a7;
 }
